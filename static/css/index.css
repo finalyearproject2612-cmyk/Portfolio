@@ -14,7 +14,7 @@ body{
 }
 
 nav{
-    box-shadow: 0px 2px 8px orangered;
+    box-shadow: 0px 5px 8px orangered;
 }
 
 header{
@@ -55,6 +55,9 @@ nav a{
 nav a.active::after{
     border-bottom: 3px solid orangered fixed;
     color: orangered;
+}
+.nav-link:active{
+    transform: translateY(-10px);
 }
 .section1{
     display: flex;
@@ -121,7 +124,7 @@ p{
     font-weight:bold;
 }
 #b1:hover{
-    transform: scale(1.05);
+    transform: scale(1.06);
     background-color: orangered;
     color: white;
 }
@@ -155,11 +158,14 @@ i:hover{
 
 .parent{
     padding: 20px;
-    margin: 25px;
-    border-radius: 20px;
-    border-bottom: 5px groove grey;
-    border-right: 5px groove grey;
-    background: linear-gradient(to right, orange,orangered,red);
+    margin-left:120px;
+    border-radius: 12px 0px 0px 12px;
+    /* border: 1px solid var(--border); */
+    background-color: rgb(54, 54, 54) ;
+    box-shadow: 0px 5px 8px orangered;
+    /* border-bottom: 5px groove grey; */
+    /* border-right: 5px groove grey;  */
+    /* background: linear-gradient(to right, orange,orangered,red); */
     /* color: blue; */
     display: flex;
     justify-content: center ;
@@ -170,7 +176,7 @@ i:hover{
     font-weight: 600;
     width: 500px;
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    color: orangered;
     padding: 10px;
     margin: 5px;
 }
@@ -185,11 +191,12 @@ i:hover{
 
 .parent2{
     padding: 20px;
-    margin: 25px;
-    background: linear-gradient( white,rgb(173, 173, 173),rgb(77, 76, 76));
-    border-radius: 20px;
-    border-bottom: 5px groove rgb(255, 255, 255);
-    border-right: 5px groove rgb(255, 255, 255);
+    margin-right:120px ;
+    background-color: rgb(95, 95, 95) ;
+    border-radius:0px 12px 12px 0px;
+    box-shadow: 0px 5px 8px orangered;
+    /* border-bottom: 5px groove orange;
+    border-right: 5px groove orange; */
 }
 #skill{
     padding: 10px;
@@ -197,7 +204,7 @@ i:hover{
     /* width: fit-content; */
     text-align: center;
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    color: orangered;
     font-size: x-large;
     font-weight: 800;
     /* border-bottom: 3px solid rgb(80, 0, 155) ; */
@@ -234,24 +241,24 @@ i:hover{
 
 .project{
     padding: 20px;
-    margin: 25px;
-    border-radius: 20px;
-    border-bottom: 5px groove grey;
-    border-right: 5px groove grey;
+    margin-left:120px ;
+    background-color: rgb(54, 54, 54);
+    border-radius: 12px 0px 0px 12px ;
+    box-shadow: 0px 5px 8px orangered;
     text-align: center;
-    background: linear-gradient(to right, orange,orangered,red);
+    /* background: linear-gradient(to right, orange,orangered,red); */
 }
 .projhead{
     background: transparent;
 }
 #proj span{
     background: transparent;
-    color: rgb(0, 0, 0);
+    color: orangered;
     font-size: xx-large;
 }
 #proj{
     background: transparent;
-    color: rgb(204, 196, 196);
+    color: rgb(0, 0, 0);
 }
 .projcon{
     background: transparent;
@@ -285,28 +292,29 @@ i:hover{
     height: 60px;
 }
 #b2{
-    background:  linear-gradient(to right,rgb(0, 162, 255), rgb(0, 60, 255), darkblue );
-    color: white;
-    font-weight: 600;
+    background-color:rgb(54, 54, 54) ;
+    color: orangered;
+    font-size: large;
+    font-weight: bold;
     padding: 10px;
     margin: 15px;
-    border-radius: 20px;
-    border: 2px solid white;
+    border-radius: 12px;
+    border: 2px solid orangered;
 }
 #b2:hover{
-    transform: scale(1.05);
-    color: rgb(0, 0, 0);
+    transform: scale(1.06);
+    color: White;
+    background-color: orangered;
 }
 
 .sect2{
-    background: linear-gradient(to right,rgb(77, 76, 76),rgb(173, 173, 173), white);
+    background-color: rgb(95, 95, 95) ;
     text-align: center;
     color: black;
-    padding: 5px;
+    padding: 20px;
     margin: 10px;
-    border-radius: 20px;
-    border-bottom: 5px groove grey;
-    border-right: 5px groove grey;
+    border-radius: 12px;
+    box-shadow: 0px 5px 8px orangered;
 }
 .sect2 h3{
     background: transparent;
@@ -317,7 +325,8 @@ i:hover{
 }
 
 .gridfolder{
-    background: linear-gradient(rgb(196, 1, 1),rgb(8, 144, 189));
+    /* background-color: rgb(95, 95, 95); */
+    background-color: rgb(54, 54, 54);
     margin: 5px;
     padding: 5px;
     border-radius: 20px;
@@ -341,7 +350,8 @@ i:hover{
     margin: 10px;
 }
 .artgallery{
-    background: transparent;
+    /* background-color:rgb(95, 95, 95) ; */
+    background-color: rgb(54, 54, 54);
     padding: 10px;
     margin: 10px;
     display: grid;
@@ -352,7 +362,7 @@ i:hover{
 .artgallery img{
     background: transparent;
     /* border-radius:0px 20px 0px 20px; */
-    border: 6px double rgb(0, 0, 0);
+    border: 2px solid rgb(255, 102, 0);
 }
 .artgallery img:hover{
     /* width: 360px; */
@@ -405,23 +415,29 @@ i:hover{
 }
 #pp{
     background: transparent;
+    font-size: large;
+    color:black;
 }
 #b3{
     padding: 10px;
-    background:  linear-gradient(to right,rgb(0, 162, 255), rgb(0, 60, 255), darkblue );
-    color: white;
-    font-weight: 600;
+    /* background-color:rgb(95, 95, 95) ; */
+    background-color: rgb(54, 54, 54);
+    color: orangered;
+    font-size: large;
+    font-weight:bold;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid orangered;
 }
 #b3:hover{
-    color: rgb(0, 0, 0);
-    transform: scale(1.05);
+    transform: scale(1.06);
+    color: White;
+    background-color: orangered;
 }
 .child3{
-    background: linear-gradient(rgb(255, 255, 50),rgb(53, 248, 53));
-    padding: 5px;
-    margin: 5px;
+    /* background-color:rgb(95, 95, 95) ; */
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+    margin: 10px;
     border-radius: 20px;
 }
 .videoedit{
@@ -449,19 +465,19 @@ i:hover{
 }
 .sect3{
     padding: 20px;
-    margin: 25px;
-    border-radius: 20px;
-    border-bottom: 5px groove grey;
-    border-right: 5px groove grey;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: rgb(54, 54, 54) ;
+    box-shadow: 0px 5px 8px orangered;
     text-align: center;
-    background: linear-gradient(to right, orange,orangered,red);
+    /* background: linear-gradient(to right, orange,orangered,red); */
 }
 #ach{
     background: transparent;
     font-size: x-large;
-    font-weight: 800;
+    font-weight: bold;
     text-align: center;
-    color: black;
+    color: orangered;
 }
 .certificates{
     background: transparent;
@@ -475,7 +491,7 @@ i:hover{
 }
 .imgpara img{
     background: transparent;
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid orangered;
     border-radius: 0px 20px 0px 20px;
     width: 600px;
     height: 350px;
@@ -488,12 +504,14 @@ i:hover{
 }
 .sect3 h4{
     background: transparent;
+    color: orangered;
+    font-weight: bold;
 }
 .nptel{
     background: transparent;
 }
 .nptel img{
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid orangered;
     border-radius: 0px 20px 0px 20px;
     width: 800px;
     height: 450px;
@@ -561,6 +579,18 @@ hr{
         width: 400px;
         height: 300px;
     }
+    .parent{
+        margin-left:100px;
+        border-radius: 12px 0px 0px 12px;
+    }
+    .parent2{
+        margin-right:100px;
+        border-radius: 0px 12px 12px 0px;
+    }
+    .project{
+        margin-left:100px;
+        border-radius: 12px 0px 0px 12px;
+    }
     .box1 img{
     width: 200px;
     /* height: 50px; */
@@ -596,6 +626,24 @@ hr{
     justify-content: space-around;
     align-items: center;
     background-color: transparent;   
+}
+.parent{
+    margin: 5px;
+    border-radius: 12px;
+}
+.parent2{
+    margin: 5px;
+    border-radius: 12px;
+}
+.project{
+    margin: 5px;
+    border-radius: 12px;
+}
+.projcon p{
+    font-size: larger;
+}
+#aboutp{
+    font-size: larger;
 }
 #nav1{
     display: block;
@@ -677,21 +725,23 @@ hr{
     width: 280px;
     height: 150px;
 }
+.copy{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact{
+    display: flex;
+}
 
 }
 
 
 
 
-  /* Mobile M -> media query */
-/* @media(max-width:3px) */
 
 
 
-
-
-
- /* Mobile S -> media query */
+ /* Mobile S, M, L -> media query */
 @media(max-width:426px){
     .section1{
         display: flex;
@@ -720,9 +770,15 @@ hr{
         text-align: center;
     }
     .parent{
+        margin: 5px;
+        border-radius: 12px;
         display: flex;
         flex-wrap: wrap;
     }
+    .parent{
+    margin: 5px;
+    border-radius: 12px;
+}
     #aboutp{
         font-size: small;
     }
@@ -749,6 +805,10 @@ hr{
     }
     #proj{
         font-size: x-small;
+    }
+    .project{
+        margin: 5px;
+    border-radius: 12px;
     }
     #proj span{
         font-size:large;
@@ -794,6 +854,10 @@ hr{
 }
 #contacth2{
     font-size: x-large;
+}
+.contact{
+    display: flex;
+    justify-content: center;
 }
 #contact{
     text-align: center;
